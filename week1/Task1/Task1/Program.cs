@@ -8,7 +8,7 @@ namespace Task1
 {
     class Program
     {
-        public static bool Prime(int n)
+        public static bool Prime(int n) 
         {
 
             if (n == 1 || n == 0) return false;
