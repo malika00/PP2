@@ -57,7 +57,7 @@ namespace Lab3
                 sz = fs.Length;
                 for(int i = 0; i < fs.Length; i++)                      //пробигаемся по всем файлам 
                 {
-                    if (fs[i].Name[0] == '.')                           //которые проходят проверку,если название файла начинается с "." 
+                    if (fs[i].Name[0] == '.' && ok == false)                           //которые проходят проверку,если название файла начинается с "." 
                         sz--;                                           //тогда  размер уменьшается 
                 }
             }
@@ -144,6 +144,7 @@ namespace Lab3
                     File.Move(curentfs.FullName, newpath);
                 }
             }
+
             public void Start()                                           //основная функция для запуска
              {
                 ConsoleKeyInfo consoleKey = Console.ReadKey();
